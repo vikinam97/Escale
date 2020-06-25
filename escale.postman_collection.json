@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "e3362af4-2490-45ab-8361-270d0f74e3e8",
+		"name": "escale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST User Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"viki\",\n    \"lastName\": \"viki\",\n    \"email\": \"viki@viki.vom\",\n    \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"signup"
+					]
+				},
+				"description": "to create user"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"viki@vii.com\",\n    \"password\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET user details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST buissiness create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"esale\"\n    \"email\": \"viki1@esacle.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/business",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET business list for user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/business?=&=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"business"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST product ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"1\"\n    \"description\":\"1\"\n    \"mrp\":\"1\"\n    \"business\":\"5ef4a4249d53351b39d53580\"\n    \"images\":\"12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET product list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT product update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"2\"\n    \"images\":\"2\"\n    \"description\":\"4\"\n    \"mrp\":5.9\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/product/5ef4a96f315f372549d31c84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"product",
+						"5ef4a96f315f372549d31c84"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1ZWY0OTA2ZjVhYmRmZjVmYjgxM2E1Y2YiLCJmaXJzdE5hbWUiOiJ2aWtpIiwibGFzdE5hbWUiOiJ2aWtpIiwiZW1haWwiOiJ2aWtpQHZpaS5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwiX192IjowfQ.ifX4ozSxHPPsIvutFS3QzYq76jSmcrPjcWj5dNu5cmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/product/5ef4a96f315f372549d31c84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"product",
+						"5ef4a96f315f372549d31c84"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
